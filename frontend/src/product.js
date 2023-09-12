@@ -32,7 +32,7 @@ const products=[
         category:'Shoe',
         price:3000,
         countInStock:5,
-        rating:4.5,
+        rating:4,
         numReviews:64
     },
     {
@@ -56,7 +56,7 @@ const products=[
         category:'Electronics',
         price:4500,
         countInStock:24,
-        rating:4.9,
+        rating:3.9,
         numReviews:66
     },
     {
@@ -68,7 +68,7 @@ const products=[
         category:'Utilities',
         price:3500,
         countInStock:24,
-        rating:4.7,
+        rating:2.7,
         numReviews:34
     },
 ]
