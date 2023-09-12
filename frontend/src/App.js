@@ -8,7 +8,6 @@ function App() {
           <Header/>
             <main className="py-3">
               <Container>
-              <h1>WanderLust </h1> 
               <Outlet/>
               </Container>
             </main>
