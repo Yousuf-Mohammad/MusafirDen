@@ -1,7 +1,7 @@
 import {Navbar, Nav, Container} from 'react-bootstrap';
 import {FaShoppingCart, FaUser}from 'react-icons/fa';
 import {LinkContainer} from 'react-router-bootstrap';
-import logo from '../assets/Logos/logo.png'
+import logo from '../assets/Logos/onlinelogomaker-091323-0509-3481-2000-transparent.png'
 
 function Header() {
   return (
@@ -10,8 +10,8 @@ function Header() {
         <Container>
           <LinkContainer to='/'>
             <Navbar.Brand >
-              <img src={logo} alt="WanderLust" width={70} />
-              WanderLust
+              <img src={logo} alt="WanderLust" width={200} />
+             
             </Navbar.Brand>
           </LinkContainer>
 

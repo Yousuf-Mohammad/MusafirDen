@@ -13,7 +13,7 @@ return (
 
         <Row>
             <Col md={5}>
-                <Image src={product.image} alt='product image' fluid />
+                <Image src={product.image} alt='product image'fluid />
             </Col>
             <Col md={4}>
                 <ListGroup variant='flush '>
@@ -26,6 +26,9 @@ return (
                     <ListGroup.Item >
                         {product.description}
                     </ListGroup.Item>
+                    <ListGroup.Item>
+                            <h5>Brand : {product.brand}</h5>
+                        </ListGroup.Item>
                 </ListGroup>
             </Col>
             <Col md={3}>
@@ -54,6 +57,7 @@ return (
 
                             </Button>
                         </ListGroup.Item>:null}
+                        
                     </ListGroup>
                 </Card>
             </Col>
