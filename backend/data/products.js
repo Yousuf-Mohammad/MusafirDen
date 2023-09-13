@@ -84,7 +84,7 @@ const products=[
         numReviews:41
     },
     {
-        _id:8,
+        _id:"8",
         name:'Backpacking Sleeping Bag Camping Gear ',
         image:"/Images/81PWJvC6xHL._AC_SL1500_.jpg",
         description:"COMFORTABLE & DURABLE: The lightweight warm sleeping bag camping bed is made w/ 210T polyester fabric, soft pongee liner, & 2 X 0.48 lbs double layers filling hollow cotton making it sturdy & extremely comfortable no matter how rough the ground is.WATERPROOF OUTER LINER: Serenelife adult sleeping bag for camping has sturdy & waterproof outer liner to withstand harsh weather conditions & keep you warm & dry. It also has an anti-snag zipper & opens on the side making getting in/out easy  ",
