@@ -1,6 +1,5 @@
 const products=[
     {
-    
         name:'LED Camping Lantern, Waterproof Tent Light ',
         image:"/Images/pexels-uriel-mont-6271688.jpg",
         description:"High Brightness & Dimmable: Long press the button to adjust brightness up to 1000 lumen, suitable for reading or illuminate the whole space.",
@@ -24,7 +23,6 @@ const products=[
         numReviews:46
     },
     {
-       
         name:'KEEN Waterproof All Terrain Hiking Boots',
         image:"/Images/81GWe+dsC5L._AC_UX575_.jpg",
         description:"MATERIAL & CONSCIOUSLY CREATED: Durable premium leather and breathable performance mesh deliver a fast pace; Breathable mesh lining helps keep feet cool in warmer environments; KEEN sources hides from Leather Working Group certified tanneries",
@@ -60,7 +58,6 @@ const products=[
         numReviews:66
     },
     {
-      
         name:'Rugged Handheld GPS Navigator',
         image:"/Images/81dYryjmJrL._AC_SL1500_.jpg",
         description:"Support for GPS and GLONASS satellite systems allows for tracking in more challenging environments than GPS alone.8 GB of internal memory for map downloads plus a micro SD card slot.Battery life: up to 25 hours in GPS mode with 2 AA batteries",
@@ -72,7 +69,6 @@ const products=[
         numReviews:34
     },
     {
- 
         name:'Granite Gear Blaze 60L Backpack',
         image:"/Images/71OxMFyh+RL._AC_UX569_.jpg",
         description:"Dual density shoulder harness with load-lifter straps, removable sternum strap and whistle buckle for safety.Cinch-and-roll closure with crossing webbing straps to compress and secure the pack's contents. Removable lid compartment with DWR treated zipper that converts to optional chest pack to carry on your front  ",
@@ -84,7 +80,6 @@ const products=[
         numReviews:41
     },
     {
-       
         name:'Backpacking Sleeping Bag Camping Gear ',
         image:"/Images/81PWJvC6xHL._AC_SL1500_.jpg",
         description:"COMFORTABLE & DURABLE: The lightweight warm sleeping bag camping bed is made w/ 210T polyester fabric, soft pongee liner, & 2 X 0.48 lbs double layers filling hollow cotton making it sturdy & extremely comfortable no matter how rough the ground is.WATERPROOF OUTER LINER: Serenelife adult sleeping bag for camping has sturdy & waterproof outer liner to withstand harsh weather conditions & keep you warm & dry. It also has an anti-snag zipper & opens on the side making getting in/out easy  ",
