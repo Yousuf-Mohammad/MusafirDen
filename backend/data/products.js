@@ -1,6 +1,6 @@
 const products=[
     {
-        _id:1,
+    
         name:'LED Camping Lantern, Waterproof Tent Light ',
         image:"/Images/pexels-uriel-mont-6271688.jpg",
         description:"High Brightness & Dimmable: Long press the button to adjust brightness up to 1000 lumen, suitable for reading or illuminate the whole space.",
@@ -12,7 +12,7 @@ const products=[
         numReviews:44
     },
     {
-        _id:2,
+        
         name:'Coleman Camping Tent with Instant Setup',
         image:"/Images/pexels-photo-2496880.jpeg",
         description:"Instant tent sets up in just 1 minute. Fits 1 queen-size air bed.5 Tent Windows with 1 door.Built in Lights : No, Vestibule Area : No.Measures 8 x 7 feet with 4-foot 11-inch center height",
@@ -24,7 +24,7 @@ const products=[
         numReviews:46
     },
     {
-        _id:3,
+       
         name:'KEEN Waterproof All Terrain Hiking Boots',
         image:"/Images/81GWe+dsC5L._AC_UX575_.jpg",
         description:"MATERIAL & CONSCIOUSLY CREATED: Durable premium leather and breathable performance mesh deliver a fast pace; Breathable mesh lining helps keep feet cool in warmer environments; KEEN sources hides from Leather Working Group certified tanneries",
@@ -36,7 +36,7 @@ const products=[
         numReviews:64
     },
     {
-        _id:4,
+    
         name:'FROGG TOGGS Ultra-lite2 Poncho',
         image:"/Images/81tLs1HaduL._AC_UX569_.jpg",
         description:"100% waterproof, constructed super-lightweight and durable non woven Polypropylene material.the Ultra Lite 2 Poncho stays comfortable. Constructed with an outer layer that provides waterproof/breathable protection and an inner layer that remains soft next to skin",
@@ -48,7 +48,7 @@ const products=[
         numReviews:4
     },
     {
-        _id:5,
+    
         name:'Solar Power Bank with Qi Wireless Charging ',
         image:"/Images/81oZ4euwMYL._AC_SL1500_.jpg",
         description:"20000mAh Magnetic Solar Charger: Just attach your phone to the magnetic solar charger and press the power button for efficient wireless charging. The built-in powerful magnets can be precisely aligned and fit with your iPhone, which greatly increases the speed of wireless charging (10W Max). Mag-Safe wireless charging technology Only supports iPhone 12 series and later",
@@ -60,7 +60,7 @@ const products=[
         numReviews:66
     },
     {
-        _id:6,
+      
         name:'Rugged Handheld GPS Navigator',
         image:"/Images/81dYryjmJrL._AC_SL1500_.jpg",
         description:"Support for GPS and GLONASS satellite systems allows for tracking in more challenging environments than GPS alone.8 GB of internal memory for map downloads plus a micro SD card slot.Battery life: up to 25 hours in GPS mode with 2 AA batteries",
@@ -72,7 +72,7 @@ const products=[
         numReviews:34
     },
     {
-        _id:7,
+ 
         name:'Granite Gear Blaze 60L Backpack',
         image:"/Images/71OxMFyh+RL._AC_UX569_.jpg",
         description:"Dual density shoulder harness with load-lifter straps, removable sternum strap and whistle buckle for safety.Cinch-and-roll closure with crossing webbing straps to compress and secure the pack's contents. Removable lid compartment with DWR treated zipper that converts to optional chest pack to carry on your front  ",
@@ -84,7 +84,7 @@ const products=[
         numReviews:41
     },
     {
-        _id:"8",
+       
         name:'Backpacking Sleeping Bag Camping Gear ',
         image:"/Images/81PWJvC6xHL._AC_SL1500_.jpg",
         description:"COMFORTABLE & DURABLE: The lightweight warm sleeping bag camping bed is made w/ 210T polyester fabric, soft pongee liner, & 2 X 0.48 lbs double layers filling hollow cotton making it sturdy & extremely comfortable no matter how rough the ground is.WATERPROOF OUTER LINER: Serenelife adult sleeping bag for camping has sturdy & waterproof outer liner to withstand harsh weather conditions & keep you warm & dry. It also has an anti-snag zipper & opens on the side making getting in/out easy  ",
