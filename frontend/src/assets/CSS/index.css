@@ -22,6 +22,12 @@ main {
     text-overflow: ellipsis; /* Add ellipsis for long text */
     white-space: nowrap; /* Prevent wrapping */
   }
+  .product-title:hover{
+    overflow: visible;
+    height: max-content;
+    text-wrap:wrap;
+
+  }
   
   table td,
   table th {
@@ -51,3 +57,8 @@ main {
     bottom: 0;
     background: rgba(0, 0, 0, 0.5);
   }
+  /* .productCard{
+    height: 580px;
+    width: 310px;
+  } */
+ 
