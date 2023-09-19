@@ -2,6 +2,7 @@
 import {Row, Col } from "react-bootstrap"
 import Product from '../components/Product'
 import { useGetProductsQuery } from "../Slices/productApiSlice"
+import Loader from "../components/Loader";
 // import axios from 'axios'
 const HomeScreen = () => {
 // const [products,setProducts]= useState([]);
@@ -18,9 +19,12 @@ const {data: products, isLoading, error} = useGetProductsQuery();
 return (
     
     <>     
-        {isLoading? ( <h2>Loading</h2>) : error?( <h2>{error?.data?.message || error.error}</h2>):(
+        {isLoading? ( <Loader/>) : 
+        error?( <h2>{error?.data?.message || error.error}</h2>):
+        (
             <>
             <h1> Latest Products</h1>
+           
             <Row>
             {
                 products.map((product)=>(
