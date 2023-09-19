@@ -10,15 +10,11 @@ function Header() {
         <Container>
           <LinkContainer to='/'>
             <Navbar.Brand >
-              <img src={logo} alt="WanderLust" width={200} />
-             
+              <img src={logo} alt="WanderLust" width={200}/>             
             </Navbar.Brand>
           </LinkContainer>
-
-
             <Navbar.Toggle aria-controls='basic-navbar-nav'/>
             <Navbar.Collapse id='basic-navbar-nav'>
-
             <Nav className='ms-auto'>
               <LinkContainer to='/cart'>
                   <Nav.Link > <FaShoppingCart/> Cart </Nav.Link>
