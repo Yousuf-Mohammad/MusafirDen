@@ -10,16 +10,16 @@ const Product = ({ product }) => {
         <Card.Img src={product.image} height={350} variant='top'/>
       </Link>
       <Card.Body>
-        <Link to={`/product/${product._id}`}>
+        <Link className='cardText' to={`/product/${product._id}`}>
           <Card.Title as="h6" className='product-title'>
             {product.name}
           </Card.Title>
           <Card.Text as='div'>
             <Rating value={product.rating} text={product.numReviews}/>
           </Card.Text>
-          <Card.Text as='h5'>
-          {product.price}BDT
-          </Card.Text>
+          
+            {product.prevPrice? <Card.Text as='h5'> <span className='prevPrice'>({product.prevPrice})</span> {product.price}BDT</Card.Text>:<Card.Text as='h5'>{product.price}BDT</Card.Text>  }
+
         </Link>
       </Card.Body>
     </Card>

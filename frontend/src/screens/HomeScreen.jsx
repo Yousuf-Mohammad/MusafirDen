@@ -24,7 +24,7 @@ return (
         (
             <>
             <h1> Latest Products</h1>
-           
+            {/* <Loader/> */}
             <Row>
             {
                 products.map((product)=>(
