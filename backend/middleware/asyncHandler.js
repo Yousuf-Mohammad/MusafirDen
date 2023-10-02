@@ -1,5 +1,5 @@
-const asynceHandler= fn =>(req,res,next) =>{
+const asyncHandler= fn =>(req,res,next) =>{
     Promise.resolve(fn(req,res,next).catch(next));
 }
 
-export default asynceHandler;
+export default asyncHandler;

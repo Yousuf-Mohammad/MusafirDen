@@ -8,12 +8,13 @@ import { useGetProductDetailsQuery } from '../Slices/productApiSlice';
 import { addToCart } from '../Slices/cartSlice';
 import Rating from '../components/Rating';
 import Loader from '../components/Loader';
+
 const ProductScreen = () => {
     const {id:productId}= useParams();
 
     const dispatch = useDispatch();
 
-    const navigate = useNavigate();
+    // const navigate = useNavigate();
 
     const [qty,setQty] = useState(1);
 
@@ -31,7 +32,9 @@ const ProductScreen = () => {
 
     const addToCartHandler =() =>{
         dispatch(addToCart({...product, qty }));
-        navigate('/cart')
+        alert('product is added')
+        
+        // navigate('/cart')
     }
 
 return (

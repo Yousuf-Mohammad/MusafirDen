@@ -6,6 +6,7 @@ const products=[
         brand:'LightBringer',
         category:'Electronics',
         price:4000,
+        prevPrice:null,
         countInStock:10,
         rating:4.8,
         numReviews:44
@@ -18,6 +19,7 @@ const products=[
         brand:'Coleman',
         category:'Tent',
         price:6000,
+        prevPrice:7000,
         countInStock:20,
         rating:4.6,
         numReviews:46
@@ -29,6 +31,7 @@ const products=[
         brand:'KEEN',
         category:'Shoe',
         price:3000,
+        prevPrice:null,
         countInStock:0,
         rating:4,
         numReviews:64
@@ -41,6 +44,7 @@ const products=[
         brand:'FROGG TOGGS',
         category:'Utilities',
         price:1500,
+        prevPrice:2500,
         countInStock:14,
         rating:5,
         numReviews:4
@@ -53,6 +57,7 @@ const products=[
         brand:'BLAVOR',
         category:'Electronics',
         price:4500,
+        prevPrice:null,
         countInStock:24,
         rating:3.9,
         numReviews:66
@@ -64,6 +69,7 @@ const products=[
         brand:'Garmin',
         category:'Utilities',
         price:3500,
+        prevPrice:4800,
         countInStock:24,
         rating:2.7,
         numReviews:34
@@ -75,6 +81,7 @@ const products=[
         brand:'Granite Gear',
         category:'Bagpack',
         price:2500,
+        prevPrice:null,
         countInStock:4,
         rating:3.7,
         numReviews:41
@@ -86,6 +93,7 @@ const products=[
         brand:'SereneLife ',
         category:'Bagpack',
         price:2500,
+        prevPrice:3000,
         countInStock:10,
         rating:4.7,
         numReviews:11
