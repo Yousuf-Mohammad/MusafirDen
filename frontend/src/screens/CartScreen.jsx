@@ -88,7 +88,6 @@ const CartScreen = () => {
                         </h3>
 
                         {cartItems.reduce((accu,item)=>accu+item.qty*item.price,0).toFixed(2)} BDT
-                        {console.log(cartItems)}
                     </ListGroup.Item>
                     
 

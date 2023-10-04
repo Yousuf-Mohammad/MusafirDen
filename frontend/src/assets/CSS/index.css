@@ -1,5 +1,6 @@
 main {
     min-height: 80vh;
+   
   }
   
   .rating span {
@@ -64,3 +65,33 @@ main {
   .cardText{
     text-decoration: none;
   }
+  .form{
+  /* From https://css.glass */
+    margin-top: 100px;
+    border: 1px double black;
+    border-radius: 20px;
+    padding: 20px;
+    background-image: url("../Logos/desktop-wallpaper-abstract-summer-landscape-jungle-waterfall-river-abstract-nature-background-artwork-3d-art-3d-landscape-for-with-resolution-high-quality.jpg");
+    background-color: #6b6868;
+    box-shadow: 10px 10px 10px gray;
+    color: white;
+  }
+
+  .form_button{
+    width: 150px;
+    border: 1px solid black;
+    box-shadow: 10px 10px 25px gray;
+    color: white;
+    
+  }
+  .form_button:hover{
+    box-shadow: 20px 20px 45px gray;
+  }
+  .signInText{
+    text-align: center;
+    text-decoration: underline;
+    background-color: rgba(51, 161, 161, 0.712);
+    padding: 10px;
+    border-radius: 20px;
+  }
+
