@@ -1,17 +1,83 @@
 import React,{useState} from 'react'
 import { Form , Button } from 'react-bootstrap'
 import FormContainer from '../components/FormContainer'
-
+import { useSelector, useDispatch } from 'react-redux'
+import { useNavigate } from 'react-router-dom'
+import { saveShippingAddress } from '../Slices/cartSlice'
+import CheckoutSteps from '../components/CheckoutSteps'
 
 const ShippingScreen=()=>{
-    const [address, setAddress] = useState("");
-    const [city, setCity] = useState("");
-    const [postalCode, setPostalCode] = useState("");
-    const [country, setCountry] = useState("");
+    const cart =useSelector((state)=>state.cart);
+    const {shippingAddress} = cart;
 
-    return <div>
+    const navigate = useNavigate();
+    const dispatch = useDispatch(); 
 
-    </div>
+    const [address, setAddress] = useState(shippingAddress?.address||"");
+    const [city, setCity] = useState(shippingAddress?.city||"");
+    const [postalCode, setPostalCode] = useState(shippingAddress?.postalCode||"");
+
+  
+
+
+    const submitHandler =()=>{
+        dispatch(saveShippingAddress({address,city,postalCode}));
+        navigate('/payment')
+
+    }
+    return( 
+        <>
+        <CheckoutSteps step1 step2 />
+    <FormContainer>
+        
+        <h1 className='signInText'>Shipping Address</h1>
+        <Form onSubmit={submitHandler}>
+            
+            <Form.Group controlId='address' className='my-2'>
+                <Form.Label>Your Address</Form.Label>
+                <Form.Control
+                type='text'
+                placeholder='Enter Your Address'
+                value={address}
+                onChange={(e)=>setAddress(e.target.value)}
+                >
+                    
+                </Form.Control>
+            </Form.Group>
+            <Form.Group controlId='city' className='my-2'>
+                <Form.Label>City</Form.Label>
+                <Form.Control
+                type='text'
+                placeholder='Your City'
+                value={city}
+                onChange={(e)=>setCity(e.target.value)}
+                >
+                    
+                </Form.Control>
+            </Form.Group>
+
+            <Form.Group controlId='postalCode' className='my-2'>
+                <Form.Label>Postal Code</Form.Label>
+                <Form.Control
+                type='text'
+                placeholder='Your Postal Code'
+                value={postalCode}
+                onChange={(e)=>setPostalCode(e.target.value)}
+                >
+                    
+                </Form.Control>
+            </Form.Group>
+            <Button
+            type='submit'
+            variant='success'
+            className=' form_button'
+            >
+                Submit
+            </Button>
+        </Form>
+
+    </FormContainer>
+    </>)
 }
 
 export default ShippingScreen

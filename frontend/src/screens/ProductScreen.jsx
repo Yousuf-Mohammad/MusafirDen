@@ -3,6 +3,7 @@ import { useDispatch } from 'react-redux';
 import { useParams ,useNavigate } from 'react-router-dom';
 import { Link } from 'react-router-dom';
 import { Row,Col,Image, ListGroup , Card , Button, Form} from 'react-bootstrap';
+import {toast} from 'react-toastify';
 import { useGetProductDetailsQuery } from '../Slices/productApiSlice';
 // import axios from 'axios';
 import { addToCart } from '../Slices/cartSlice';
@@ -32,7 +33,7 @@ const ProductScreen = () => {
 
     const addToCartHandler =() =>{
         dispatch(addToCart({...product, qty }));
-        alert('product is added')
+        toast.info('Product is added to your cart')
         
         // navigate('/cart')
     }
