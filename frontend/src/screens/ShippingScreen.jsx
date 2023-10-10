@@ -17,7 +17,6 @@ const ShippingScreen=()=>{
     const [city, setCity] = useState(shippingAddress?.city||"");
     const [postalCode, setPostalCode] = useState(shippingAddress?.postalCode||"");
 
-  
 
 
     const submitHandler =()=>{
@@ -30,10 +29,10 @@ const ShippingScreen=()=>{
         <CheckoutSteps step1 step2 />
     <FormContainer>
         
-        <h1 className='signInText'>Shipping Address</h1>
+        <h3 className='signInText'>Shipping Address</h3>
         <Form onSubmit={submitHandler}>
             
-            <Form.Group controlId='address' className='my-2'>
+            <Form.Group controlId='address' className=''>
                 <Form.Label>Your Address</Form.Label>
                 <Form.Control
                 type='text'
@@ -44,7 +43,7 @@ const ShippingScreen=()=>{
                     
                 </Form.Control>
             </Form.Group>
-            <Form.Group controlId='city' className='my-2'>
+            <Form.Group controlId='city' className=''>
                 <Form.Label>City</Form.Label>
                 <Form.Control
                 type='text'
@@ -56,7 +55,7 @@ const ShippingScreen=()=>{
                 </Form.Control>
             </Form.Group>
 
-            <Form.Group controlId='postalCode' className='my-2'>
+            <Form.Group controlId='postalCode' className=''>
                 <Form.Label>Postal Code</Form.Label>
                 <Form.Control
                 type='text'
@@ -70,7 +69,7 @@ const ShippingScreen=()=>{
             <Button
             type='submit'
             variant='success'
-            className=' form_button'
+            className=' form_button mt-2'
             >
                 Submit
             </Button>

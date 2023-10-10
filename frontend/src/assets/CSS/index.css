@@ -67,7 +67,7 @@ main {
   }
   .form{
   /* From https://css.glass */
-    margin-top: 100px;
+    margin-top: 50px;
     border: 1px double black;
     border-radius: 20px;
     padding: 20px;
@@ -75,6 +75,7 @@ main {
     background-color: #6b6868;
     box-shadow: 10px 10px 10px gray;
     color: white;
+    
   }
 
   .form_button{
@@ -90,8 +91,13 @@ main {
   .signInText{
     text-align: center;
     text-decoration: underline;
+    font-weight: bold;
     background-color: rgba(51, 161, 161, 0.712);
     padding: 10px;
     border-radius: 20px;
   }
 
+  .placedOrderImage{
+    height: 100px;
+    object-fit: fill;
+  }
