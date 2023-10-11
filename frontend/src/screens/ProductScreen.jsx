@@ -1,6 +1,6 @@
 import React,{useState} from 'react';
 import { useDispatch } from 'react-redux';
-import { useParams ,useNavigate } from 'react-router-dom';
+import { useParams} from 'react-router-dom';
 import { Link } from 'react-router-dom';
 import { Row,Col,Image, ListGroup , Card , Button, Form} from 'react-bootstrap';
 import {toast} from 'react-toastify';
@@ -33,7 +33,7 @@ const ProductScreen = () => {
 
     const addToCartHandler =() =>{
         dispatch(addToCart({...product, qty }));
-        toast.info('Product is added to your cart')
+        toast.success('Product is added to your cart')
         
         // navigate('/cart')
     }
