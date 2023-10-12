@@ -10,6 +10,7 @@ const OrderListScreen = () => {
     
     return (
     <>
+    <h3>Orders</h3>
     {isLoading? <Loader/>: error?<Message variant='danger'>{error}</Message> :(
         <Table striped bordered hover responsive className='table-sm'>
             <thead>
