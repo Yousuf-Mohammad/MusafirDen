@@ -31,7 +31,7 @@ const OrderListScreen = () => {
                         <td>{order.totalPrice}Tk</td>
                         <td>{order.isDelivered? (order.deliveredAt.substring(0,10)):("Not Delivered yet")}</td>
                         <td><LinkContainer to={`/orders/${order._id}`}>
-                            <Button>
+                            <Button className='btn-sm'> 
                                 Detail
                             </Button>
                             </LinkContainer>

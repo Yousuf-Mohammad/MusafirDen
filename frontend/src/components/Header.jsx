@@ -66,9 +66,12 @@ function Header() {
               )}
 
               {userInfo && userInfo.isAdmin &&(
-                <NavDropdown title='Admin' id='adminmenu'>
+                <NavDropdown title='Dashboard' id='adminmenu'>
                   <LinkContainer to='/admin/orderlist'>
                     <NavDropdown.Item>Orders</NavDropdown.Item>
+                  </LinkContainer>
+                  <LinkContainer to='/admin/productlist'>
+                    <NavDropdown.Item>Products</NavDropdown.Item>
                   </LinkContainer>
                 </NavDropdown>
               )}

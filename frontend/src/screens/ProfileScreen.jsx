@@ -52,7 +52,7 @@ const ProfileScreen = () => {
     <Row>
         {loadingUpdateProfile && isLoading? <Loader/> : error?(<Message variant='danger'>{error?.data?.message || error.error}</Message>):(<>
             <Col md={4}>
-            <h2>User Profile</h2>
+            <h2>Update Profile</h2>
         
             <Form onSubmit={submitHandler} className='form'>
                 <Form.Group controlId='name' className='my-1'>
@@ -97,6 +97,8 @@ const ProfileScreen = () => {
             
         </Col>
         <Col md={8}>
+            {orders?.length ===0 ? <Message variant='warning'>You have not ordered anything yet</Message>:
+            <>
             <h3>My Orders</h3> 
             <Table striped hover responsive className='table-sm'>
                 <thead>
@@ -127,6 +129,7 @@ const ProfileScreen = () => {
                     ))}
                 </tbody>
             </Table>
+            </>}
 
         </Col>
         </>)}
