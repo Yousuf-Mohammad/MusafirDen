@@ -1,6 +1,6 @@
 import React, {useState, useEffect} from 'react'
 import { Link,useNavigate,useParams } from 'react-router-dom'
-import { Form,Button,Row, Col } from 'react-bootstrap'
+import { Form,Button,Row, Col,Image } from 'react-bootstrap'
 import Message from '../../components/Message'
 import Loader from '../../components/Loader'
 import { useGetProductDetailsQuery ,useUpdateProductMutation,useUploadProductImageMutation} from '../../Slices/productApiSlice'
@@ -79,13 +79,14 @@ const ProductEditScreen = () => {
     <>
     <Link to="/admin/productlist" className='btn btn-dark my-2 text-light '>Go Back</Link>
 
-    {isLoading && loadingUpdate ? <Loader/>: error && errorUpdate ? <Message variant='danger'>{error||errorUpdate}</Message>:(
+    {isLoading && loadingUpdate && loadingUpload ? <Loader/>: error && errorUpdate ? <Message variant='danger'>{error||errorUpdate}</Message>:(
         <>
         
         <Row className='justify-content-md-center'>
             <Col md={6} sm={12}>
             <Form onSubmit={submitHandler}>
             <h3>Edit Product</h3>
+            <Image src ={image} style={{width:"100%"}}></Image>
             <Form.Group controlId='name'>
                 
                 <Form.Label>Name</Form.Label>
@@ -114,7 +115,6 @@ const ProductEditScreen = () => {
                 onChange={(e)=>setPrice(e.target.value)}/>
             </Form.Group>
 
-            {/* Image will go here  */}
 
             <Form.Group controlId='brand'>
                 
@@ -128,11 +128,11 @@ const ProductEditScreen = () => {
 
             <Form.Group controlId='image'>
                 <Form.Label>Image</Form.Label>
-                <Form.Control
+                {/* <Form.Control
                 type='text'
                 placeholder='Enter image URL'
                 value={image}
-                onChange={(e)=>setImage()}></Form.Control>
+                onChange={(e)=>setImage()}></Form.Control> */}
 
                 <Form.Control
                 type='file'
