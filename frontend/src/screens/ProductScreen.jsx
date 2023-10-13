@@ -33,7 +33,7 @@ const ProductScreen = () => {
     // },[productId])
 
     const {data:product , isLoading , error,refetch } = useGetProductDetailsQuery(productId);
-
+console.log(product);
     const [createReview]=useCreateReviewMutation();
 
     const {userInfo} =useSelector((state)=>state.auth);
@@ -72,7 +72,7 @@ return (
                 <>
                 <Row>
             <Col md={5}>
-                <Image src={product.image} alt='product image'fluid />
+                <Image src= {`/Images/${product.image}`} alt='product image'fluid />
             </Col>
             <Col md={4}>
                 <ListGroup variant='flush '>

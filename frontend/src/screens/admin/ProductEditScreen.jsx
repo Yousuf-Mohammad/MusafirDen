@@ -69,6 +69,7 @@ const ProductEditScreen = () => {
             try {
                 const res = await uploadProductImage(formData).unwrap();
                 toast.success(res.message);
+                console.log(res.message);
                 setImage(res.image);
             } catch (err) {
                 toast.error(err?.data?.message || err.error);
@@ -86,7 +87,7 @@ const ProductEditScreen = () => {
             <Col md={6} sm={12}>
             <Form onSubmit={submitHandler}>
             <h3>Edit Product</h3>
-            <Image src ={image} style={{width:"100%"}}></Image>
+            <Image src ={`/Images/${image}`} style={{width:"100%"}}></Image>
             <Form.Group controlId='name'>
                 
                 <Form.Label>Name</Form.Label>
