@@ -5,9 +5,10 @@ import { useGetProductsQuery } from "../Slices/productApiSlice"
 import Loader from "../components/Loader";
 import { useParams } from "react-router-dom";
 import Paginate from "../components/Paginate";
+import Carosel from "../components/Carosel";
 // import axios from 'axios'
 const HomeScreen = () => {
-    const {pageNumber} =useParams();
+    const {pageNumber,keyword} =useParams();
 // const [products,setProducts]= useState([]);
 // useEffect(()=>{
 //     const fetchProducts = async()=>{
@@ -17,7 +18,7 @@ const HomeScreen = () => {
 //     fetchProducts();
 // },[]);
 
-const {data, isLoading, error} = useGetProductsQuery({pageNumber});
+const {data, isLoading, error} = useGetProductsQuery({keyword,pageNumber});
 
 return (
     
@@ -26,7 +27,8 @@ return (
         error?( <h2>{error?.data?.message || error.error}</h2>):
         (
             <>
-            <h1> Latest Products</h1>
+            {!Boolean(pageNumber)&& !Boolean(keyword)?(<Carosel/>):(null)}
+            
             {/* <Loader/> */}
             <Row>
             {
@@ -39,7 +41,9 @@ return (
             </Row>
             <Paginate
             pages={data.pages}
-            page={data.page}/>
+            page={data.page}
+            keyword= {keyword? keyword:''}/>
+            
             </>
         )}
         

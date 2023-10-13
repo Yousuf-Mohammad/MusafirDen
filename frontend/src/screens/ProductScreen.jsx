@@ -168,7 +168,7 @@ return (
                         
                             
                             {userInfo? (
-                                <Form onSubmit={submitHandler} className='form'>
+                                <Form onSubmit={submitHandler} className='formReview'>
                                     <h3 className="text-center  signInText">Write a review</h3>
                                 <Form.Group controlId='rating' className='my-1'>
                                 <Form.Label>Rating</Form.Label>

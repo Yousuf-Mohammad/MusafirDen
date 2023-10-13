@@ -5,6 +5,7 @@ import { useSelector ,useDispatch } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
 import { useLogoutMutation } from '../Slices/userApiSlice';
 import { logout } from '../Slices/authSlice';
+import SearchBox from './SearchBox';
 import logo from '../assets/Logos/onlinelogomaker-091323-0509-3481-2000-transparent.png'
 
 function Header() {
@@ -39,6 +40,7 @@ function Header() {
             <Navbar.Toggle aria-controls='basic-navbar-nav'/>
             <Navbar.Collapse id='basic-navbar-nav'>
             <Nav className='ms-auto'>
+              <SearchBox/>
               <LinkContainer to='/cart'>
                   <Nav.Link > <FaShoppingCart/> Cart 
                   {cartItems.length >0 && (

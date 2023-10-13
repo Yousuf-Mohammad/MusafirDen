@@ -77,6 +77,17 @@ main {
     color: white;
     
   }
+  .formReview{
+    width: 80%;
+    border: 1px double black;
+    border-radius: 10px;
+    padding: 35px;
+    background-image: url("../Logos/desktop-wallpaper-abstract-summer-landscape-jungle-waterfall-river-abstract-nature-background-artwork-3d-art-3d-landscape-for-with-resolution-high-quality.jpg");
+    background-color: #6b6868;
+    box-shadow: 10px 10px 10px gray;
+    color: white;
+    
+  }
 
   .form_button{
     width: 150px;
@@ -112,4 +123,14 @@ main {
       display: flex;
       justify-content: center;
       margin-top: 40px;
+    }
+    .searchBox{
+      width: 30vw;
+    }
+    .carouselImage{
+      width: 100vw;
+      height: 50vh;
+      object-fit:cover;
+      object-position:-15vw
+      
     }
