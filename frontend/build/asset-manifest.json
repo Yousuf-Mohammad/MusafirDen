@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/static/css/main.826f7de8.css",
+    "main.js": "/static/js/main.3c7a8705.js",
+    "static/js/787.cda612ba.chunk.js": "/static/js/787.cda612ba.chunk.js",
+    "static/media/adventure-compass.gif": "/static/media/adventure-compass.d23960d52587fad1d903.gif",
+    "static/media/desktop-wallpaper-abstract-summer-landscape-jungle-waterfall-river-abstract-nature-background-artwork-3d-art-3d-landscape-for-with-resolution-high-quality.jpg": "/static/media/desktop-wallpaper-abstract-summer-landscape-jungle-waterfall-river-abstract-nature-background-artwork-3d-art-3d-landscape-for-with-resolution-high-quality.06052025b7aed8884ee0.jpg",
+    "static/media/onlinelogomaker-091323-0509-3481-2000-transparent.png": "/static/media/onlinelogomaker-091323-0509-3481-2000-transparent.39342b2438bf3440daf0.png",
+    "index.html": "/index.html",
+    "main.826f7de8.css.map": "/static/css/main.826f7de8.css.map",
+    "main.3c7a8705.js.map": "/static/js/main.3c7a8705.js.map",
+    "787.cda612ba.chunk.js.map": "/static/js/787.cda612ba.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.826f7de8.css",
+    "static/js/main.3c7a8705.js"
+  ]
+}
