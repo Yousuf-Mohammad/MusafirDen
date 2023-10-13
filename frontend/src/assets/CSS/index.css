@@ -106,5 +106,10 @@ main {
   .descriptionBox{
     width: 100%;
     height: 150px;
-    text-overflow: ellipsis;
+    
+    }
+    .paginate{
+      display: flex;
+      justify-content: center;
+      margin-top: 40px;
     }
