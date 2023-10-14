@@ -129,7 +129,7 @@ return (
                                 </Row>
                             </ListGroup.Item>
                         )}
-                        {product.countInStock!==0 && !userInfo.isAdmin?<ListGroup.Item>
+                        {product.countInStock!==0 && !userInfo?.isAdmin?<ListGroup.Item>
                         <Button 
                             className='btn-block'
                             type='button'
