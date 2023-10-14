@@ -41,15 +41,17 @@ function Header() {
             <Navbar.Collapse id='basic-navbar-nav'>
             <Nav className='ms-auto'>
               <SearchBox/>
-              <LinkContainer to='/cart'>
-                  <Nav.Link > <FaShoppingCart/> Cart 
-                  {cartItems.length >0 && (
-                    <Badge bg='info' pill style={{marginLeft:'3px'}} className=''>
-                        {cartItems.reduce((accumilator,current)=> accumilator+current.qty,0)}
-                    </Badge>
-                  ) }
-                  </Nav.Link>
-              </LinkContainer>
+              {userInfo && userInfo.isAdmin ?(null):(
+                <LinkContainer to='/cart'>
+                <Nav.Link > <FaShoppingCart/> Cart 
+                {cartItems.length >0 && (
+                  <Badge bg='info' pill style={{marginLeft:'3px'}} className=''>
+                      {cartItems.reduce((accumilator,current)=> accumilator+current.qty,0)}
+                  </Badge>
+                ) }
+                </Nav.Link>
+            </LinkContainer>
+              )}
           
               {userInfo?(
                 <NavDropdown title={userInfo.name} id='username'>

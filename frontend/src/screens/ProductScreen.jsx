@@ -129,7 +129,7 @@ return (
                                 </Row>
                             </ListGroup.Item>
                         )}
-                        {product.countInStock!==0?<ListGroup.Item>
+                        {product.countInStock!==0 && !userInfo.isAdmin?<ListGroup.Item>
                         <Button 
                             className='btn-block'
                             type='button'
@@ -167,7 +167,7 @@ return (
                         <Col md={6}>
                         
                             
-                            {userInfo? (
+                            {userInfo && !userInfo.isAdmin? (
                                 <Form onSubmit={submitHandler} className='formReview'>
                                     <h3 className="text-center  signInText">Write a review</h3>
                                 <Form.Group controlId='rating' className='my-1'>
