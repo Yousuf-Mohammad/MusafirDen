@@ -87,7 +87,7 @@ const ProductEditScreen = () => {
             <Col md={6} sm={12}>
             <Form onSubmit={submitHandler}>
             <h3>Edit Product</h3>
-            <Image src ={`/Images/${image}`} style={{width:"100%"}}></Image>
+            <Image src ={`../../../uploads/${image}`} style={{width:"100%"}}></Image>
             <Form.Group controlId='name'>
                 
                 <Form.Label>Name</Form.Label>

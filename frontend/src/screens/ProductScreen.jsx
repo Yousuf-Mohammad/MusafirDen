@@ -72,7 +72,7 @@ return (
                 <>
                 <Row>
             <Col md={5}>
-                <Image src= {`/Images/${product.image}`} alt='product image'fluid />
+                <Image src= {`../../../uploads/${product.image}`} alt='product image'fluid />
             </Col>
             <Col md={4}>
                 <ListGroup variant='flush '>
@@ -167,7 +167,7 @@ return (
                         <Col md={6}>
                         
                             
-                            {userInfo && !userInfo.isAdmin? (
+                            {userInfo && !userInfo?.isAdmin? (
                                 <Form onSubmit={submitHandler} className='formReview'>
                                     <h3 className="text-center  signInText">Write a review</h3>
                                 <Form.Group controlId='rating' className='my-1'>
