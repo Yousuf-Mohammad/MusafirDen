@@ -72,7 +72,7 @@ return (
                 <>
                 <Row>
             <Col md={5}>
-                <Image src= {`../../../uploads/${product.image}`} alt='product image'fluid />
+                <Image src= {`/Images/${product.image}`} alt='product image'fluid />
             </Col>
             <Col md={4}>
                 <ListGroup variant='flush '>
