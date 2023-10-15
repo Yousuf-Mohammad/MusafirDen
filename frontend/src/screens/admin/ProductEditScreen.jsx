@@ -69,9 +69,10 @@ const ProductEditScreen = () => {
             try {
                 const res = await uploadProductImage(formData).unwrap();
                 toast.success(res.message);
-                console.log(res.message);
+                console.log(res.res);
                 setImage(res.image);
             } catch (err) {
+                
                 toast.error(err?.data?.message || err.error);
             }
             };
