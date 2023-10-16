@@ -74,7 +74,8 @@ const PlaceOrderScreen = () => {
                                     <ListGroup.Item key={index}>
                                         <Row>
                                             <Col md={2} lg={2}>
-                                                <Image className='placedOrderImage' src={item.image} alt='item.name' fluid rounded />
+                                                <Image 
+                                                className='placedOrderImage' src={`Images/${item.image}`}alt='item.name' fluid rounded />
                                             </Col>
                                             <Col>
                                             <Link to={`/product/${item._id}`}>{item.name}</Link>
