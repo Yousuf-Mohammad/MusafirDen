@@ -1,6 +1,5 @@
 import path from 'path';
 import express from 'express';
-import cors from 'cors';
 import dotenv from 'dotenv';
 import cookieParser from 'cookie-parser';
 dotenv.config();
@@ -13,7 +12,7 @@ import { notFound, errorHandler } from './middleware/errorMiddleware.js';
 
 
 const port = process.env.PORT || 5000;
-
+var cors = require('cors')
 
 connectDB();
 
