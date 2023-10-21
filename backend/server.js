@@ -17,11 +17,11 @@ const port = process.env.PORT || 5000;
 connectDB();
 
 const app = express();
-app.options('*', cors())
+
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(cookieParser());
-
+app.options('*', cors())
 app.use('/api/products', productRoutes);
 app.use('/api/users', userRoutes);
 app.use('/api/orders', orderRoutes);
