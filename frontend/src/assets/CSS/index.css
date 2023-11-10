@@ -128,7 +128,7 @@ main {
       width: 30vw;
     }
     .carouselImage{
-      width: 75vw;
+      width: 100vw;
       height: 50vh;
       object-fit:cover;
       object-position: center;
